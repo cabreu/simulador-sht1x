@@ -318,8 +318,8 @@ const App = () => {
                     {/* Linha em Degrau: Demonstra a leitura da matriz C sem interpolação */}
                     <Line name="LUT em Degrau (Leitura C direta)" type="stepBefore" dataKey="stepped" stroke="#8b5cf6" strokeWidth={2} dot={false} connectNulls={true} />
                     
-                    <Line name="Pontos na LUT (Memória)" type="monotone" dataKey="lutPoint" stroke="none" dot={{ r: 4, fill: '#10b981', strokeWidth: 1, stroke: '#fff' }} />
-                    
+                    <Line name="Pontos na LUT (Memória)" type="monotone" dataKey="lutPoint" stroke="#10b981" strokeWidth={0} dot={{ r: 4, fill: '#10b981', strokeWidth: 1, stroke: '#fff' }} />                    
+                   
                     <ReferenceLine x={regionsMap[region].min} stroke="#f43f5e" strokeDasharray="3 3" />
                     <ReferenceLine x={regionsMap[region].max} stroke="#f43f5e" strokeDasharray="3 3" />
                   </LineChart>
