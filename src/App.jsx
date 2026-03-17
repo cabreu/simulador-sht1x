@@ -315,8 +315,8 @@ const App = () => {
                     <Line name="Não Linear (Datasheet)" type="monotone" dataKey="quad" stroke="#2563eb" strokeWidth={3} dot={false} connectNulls={true} />
                     <Line name={`Reta Linear (${getMethodName()})`} type="monotone" dataKey="linear" stroke="#fb923c" strokeWidth={2} strokeDasharray="5 5" dot={false} connectNulls={true} />
                     
-                    {/* Linha em Degrau: Demonstra a leitura da matriz C sem interpolação */}
-                    <Line name="LUT em Degrau (Leitura C direta)" type="stepBefore" dataKey="stepped" stroke="#8b5cf6" strokeWidth={2} dot={false} connectNulls={true} />
+                    {/* Linha em Degrau: Demonstra a leitura da matriz sem interpolação */}
+                    <Line name="LUT em Degrau (Leitura Direta)" type="stepBefore" dataKey="stepped" stroke="#8b5cf6" strokeWidth={2} dot={false} connectNulls={true} />
                     
                     <Line name="Pontos na LUT (Memória)" type="monotone" dataKey="lutPoint" stroke="#10b981" strokeWidth={0} dot={{ r: 4, fill: '#10b981', strokeWidth: 1, stroke: '#fff' }} />                    
                    
